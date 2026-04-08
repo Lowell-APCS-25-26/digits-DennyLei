@@ -12,9 +12,10 @@ public class Digits {
      *  *Precondition*: `num >= 0`
      */
     public Digits(int num) {
-       int ntemp=0;
+       digits = new ArrayList<Integer>();
+        int ntemp=0;
        while(num/10!=0){ntemp++;}
-       while(num/10!=0){
+       while(num/10>=0){
         digits.set(ntemp,num%10);
         ntemp--;
        }
